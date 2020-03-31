@@ -1,0 +1,76 @@
+<taglib name="app\portal\taglib\Portal"/>
+<include file="public@function"/>
+<meta name="author" content="ThinkCMF">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set render engine for 360 browser -->
+<meta name="renderer" content="webkit">
+
+<!-- No Baidu Siteapp-->
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+<!-- HTML5 shim for IE8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<link rel="icon" href="__IMAGE__/favicon.png" type="image/png">
+<link rel="shortcut icon" href="__IMAGE__/favicon.png" type="image/png">
+<link href="__CSS__/bootstrap.min.css" rel="stylesheet">
+<link href="__CSS__/font-awesome.min.css" rel="stylesheet"
+      type="text/css">
+<!--七牛样式-->
+<link href="__STATIC__/qiniu_sdk/main.css" rel="stylesheet">
+<link href="__STATIC__/qiniu_sdk/highlight.css" rel="stylesheet">
+<link href="__CSS__/tube.css" rel="stylesheet">
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="__CSS__/font-awesome-ie7.min.css">
+<![endif]-->
+<link href="__CSS__/style.css" rel="stylesheet">
+<style>
+    /*html{filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}*/
+    #backtotop {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+        font-size: 50px;
+        z-index: 9999;
+    }
+
+    #backtotop:hover {
+        color: #333
+    }
+
+    #main-menu-user li.user {
+        display: none
+    }
+</style>
+<script type="text/javascript">
+    //全局变量
+    var GV = {
+        ROOT: "",
+        WEB_ROOT: "",
+        JS_ROOT: "/static/js/"
+    };
+
+    var log = function (d) {
+        console.log(d);
+    }
+
+</script>
+<script src="__JS__/jquery-1.10.2.min.js"></script>
+<script src="__JS__/jquery-migrate-1.2.1.js"></script>
+<script src="__JS__/wind.js"></script>
+<!--七牛js-->
+<script src="__STATIC__/qiniu_sdk/highlight.js"></script>
+<!-- <script src="/themes/simpleboot3/public/assets/qiniu_sdk/main.js"></script> -->
+<script src="__STATIC__/qiniu_sdk/dist/qiniu.min.js"></script>
+<script src="__STATIC__/qiniu_sdk/ui.js"></script>
+<!-- /*生成二维码*/ -->
+<script src="__JS__/jquery.qrcode.min.js"></script>
+
+<!-- plist转换json -->
+<script src="__JS__/plist_parser.js"></script>
